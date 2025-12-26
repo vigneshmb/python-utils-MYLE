@@ -11,9 +11,9 @@ def moveFiles():
         "Compressed": [".zip", ".rar", ".7z",".tar"],
         "Documents": [".pdf", ".docx", ".txt",".xls",".xlsx",".csv",".doc"],
         "Coding Files":[".html",".css",".js",".jsx",".ts",".sql",".json",".har",".xml"],
-        "Music": [".mp3", ".aac", ".wav"],
-        "Videos": [".mp4", ".mov", ".avi",".mkv",".flv"],
-        "Images": [".jpg",".jpeg", ".png", ".gif",".webp"],
+        "Music": [".mp3", ".aac", ".wav","flac",".m4a"],
+        "Videos": [".mp4", ".mov", ".avi",".mkv",".flv",".3gp"],
+        "Images": [".jpg",".jpeg", ".png", ".gif",".webp",".heic"],
         "Programs": [".exe", ".msi",".iso"],
     }
 
