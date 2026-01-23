@@ -1,7 +1,5 @@
-from pymongo import MongoClient
 from datetime import datetime,timezone
-
-uri = "mongodb://localhost:27017/"
+from db_init import get_mongo_client
 
 def getCurrDateTime():
     current_datetime = datetime.now(timezone.utc)
@@ -12,7 +10,7 @@ def convertQueryToList(queryResult):
     return list(queryResult)
 
 def getCollection(dbName,collectionName):
-    client = MongoClient(uri)
+    client = get_mongo_client()
     database = client.get_database(dbName)
     collection = database.get_collection(collectionName)
     return collection
